@@ -61,3 +61,5 @@ $ dotnet run
 Once complete the model is saved in the model directory.
 
 Note: this model is configured to run on CPU and could take a couple of hours on a typical i5 4 Core CPU.
+## Deep Learning Model Details
+This model uses CNN ResNet V2 101. A good article on this algorithm is available [here](https://cv-tricks.com/keras/understand-implement-resnets/).

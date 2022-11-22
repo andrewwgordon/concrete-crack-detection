@@ -80,6 +80,7 @@ namespace concrete.images
                 };
             }        
         }
+
         // Function to display image and prediction to the console
         private static void OutputPrediction(ModelOutput prediction)
         {
@@ -88,6 +89,7 @@ namespace concrete.images
             // Display the image and prediction from the model to the console
             Console.WriteLine($"Image: {imageName} | Actual Value: {prediction.Label} | Predicted Value: {prediction.PredictedLabel}");
         }
+
         // Function to classify a single image
         private static void ClassifySingleImage(MLContext mlContext, IDataView data, ITransformer trainedModel)
         {       
@@ -101,6 +103,8 @@ namespace concrete.images
             Console.WriteLine("Classifying single image");
             OutputPrediction(prediction);
         }
+
+        // Main program entry point
         public static void Main(string[] args)
         {
             Console.WriteLine("Starting...");
