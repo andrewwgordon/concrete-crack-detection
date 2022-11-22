@@ -15,6 +15,16 @@ Microsoft.ML.ImageAnalytics Version=1.7.1
 SciSharp.TensorFlow.Redist Version=1.14.0
 
 ## Build
+From command line (Linux)
+```bash
+$ dotnet restore
+$ dotnet build
+```
+(Windows)
+```cmd
+C:\My Project>dotnet restore
+C:\My Project>dotnet build
+```
 Check the packages.
 ```bash
 $ dotnet list package
@@ -27,16 +37,6 @@ Project concrete_cracks has the following package references
    > Microsoft.ML.Vision              1.7.1       1.7.1   
    > SciSharp.TensorFlow.Redist       1.14.0      1.14.0
 $
-```
-From command line (Linux)
-```bash
-$ dotnet restore
-$ dotnet build
-```
-(Windows)
-```cmd
-C:\My Project>dotnet restore
-C:\My Project>dotnet build
 ```
 ## Deploying Images
 [Download](https://digitalcommons.usu.edu/all_datasets/48) the concrete images, unzip the archive and deploy to the assets directory in your project folder. You should have a directory structure that looks something like:
